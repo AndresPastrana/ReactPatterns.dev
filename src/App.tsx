@@ -1,4 +1,4 @@
-import ModalComponent from "./modules/modal/components/Modal";
+import ModalComponent from "./modules/01Compund Pattern/modal/components/Modal";
 
 export function App() {
   return (
