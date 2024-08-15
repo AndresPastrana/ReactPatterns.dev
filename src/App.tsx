@@ -3,31 +3,13 @@ import ModalComponent from "./modules/01Compund Pattern/modal/components/Modal";
 export function App() {
   return (
     <div className="App">
-      <h1>App</h1>
-
       {/*Way A  */}
       <ModalComponent>
-        <ModalComponent.OpenBtn
-          onClick={() => console.log("User action beffore opening the modal")}
-        />
+        <ModalComponent.OpenBtn onClick={() => console.log("Open Modal")} />
         <ModalComponent.DialogBox>
-          <ModalComponent.CloseBtn
-            onClick={() => console.log("User action before closing the modal")}
-          />
+          <ModalComponent.CloseBtn onClick={() => console.log("Close Modal")} />
         </ModalComponent.DialogBox>
       </ModalComponent>
-
-      {/*Way B */}
-      {/* <ModalComponent>
-        <OpenBtn
-          onClick={() => console.log("User action before closing the modal")}
-        />
-        <DialogBox>
-          <CloseBtn
-            onClick={() => console.log("User action before closing the modal")}
-          />
-        </DialogBox>
-      </ModalComponent> */}
     </div>
   );
 }
